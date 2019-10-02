@@ -1,6 +1,6 @@
 # React Transcript Editor
 
-<!-- _One liner_ -->
+<!-- _One liner_  -->
 
 A React component to make transcribing audio and video easier and faster.
 
