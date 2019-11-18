@@ -4,7 +4,7 @@
 
 A React component to make transcribing audio and video easier and faster.
 
-[![install size](https://packagephobia.now.sh/badge?p=@bbc/react-transcript-editor)](https://packagephobia.now.sh/result?p=@bbc/react-transcript-editor)
+<!-- [![install size](https://packagephobia.now.sh/badge?p=@bbc/react-transcript-editor)](https://packagephobia.now.sh/result?p=@bbc/react-transcript-editor) -->
 
 The project uses [this github project boards to organise and the co-ordinate development](https://github.com/bbc/react-transcript-editor/projects).
 
@@ -49,14 +49,14 @@ Visit [http://localhost:6006](http://localhost:6006)
 
 ## Usage - production
 
-Available on [npm - `@bbc/react-transcript-editor`](https://www.npmjs.com/package/@bbc/react-transcript-editor)
+Available on [npm - `react-transcript-editor`](https://www.npmjs.com/package/react-transcript-editor)
 
 ```
-npm install @bbc/react-transcript-editor
+npm install npm react-transcript-editor@1.3.1-alpha.1
 ```
 
 ```js
-import TranscriptEditor from "@bbc/react-transcript-editor";
+import TranscriptEditor from "react-transcript-editor";
 ```
 
 Minimal data needed for initialization 
@@ -116,7 +116,7 @@ If using in a parent project where [typescript](https://www.typescriptlang.org/)
 
 ```js
 //@ts-ignore
-import { TranscriptEditor } from "@bbc/react-transcript-editor";
+import { TranscriptEditor } from "react-transcript-editor";
 ```
 
 #### Internal components
@@ -139,27 +139,27 @@ You can also import some of the underlying React components directly.
 To import the components you can do as follows
 
 ```js
-import TimedTextEditor from "@bbc/react-transcript-editor/TimedTextEditor";
+import TimedTextEditor from "react-transcript-editor/TimedTextEditor";
 ```
 
 ```js
-import { TimedTextEditor } from "@bbc/react-transcript-editor";
+import { TimedTextEditor } from "react-transcript-editor";
 ```
 
-However if you are not using `TranscriptEditor` it is recommended to follow the second option and import individual components like: `@bbc/react-transcript-editor/TimedTextEditor` rather than the entire library. Doing so pulls in only the specific components that you use, which can significantly reduce the amount of code you end up sending to the client. (Similarly to how [`react-bootstrap`](https://react-bootstrap.github.io/getting-started/introduction) works)
+However if you are not using `TranscriptEditor` it is recommended to follow the second option and import individual components like: `react-transcript-editor/TimedTextEditor` rather than the entire library. Doing so pulls in only the specific components that you use, which can significantly reduce the amount of code you end up sending to the client. (Similarly to how [`react-bootstrap`](https://react-bootstrap.github.io/getting-started/introduction) works)
 
 See [the storybook](https://bbc.github.io/react-transcript-editor) for each component details on optional and required attributes.
 
 You can also use this node modules as standalone
 
 ```js
-import exportAdapter from "@bbc/react-transcript-editor/exportAdapter";
+import exportAdapter from "react-transcript-editor/exportAdapter";
 ```
 
 Converts from draftJs json format to other formats
 
 ```js
-import sttJsonAdapter from "@bbc/react-transcript-editor/sttJsonAdapter";
+import sttJsonAdapter from "react-transcript-editor/sttJsonAdapter";
 ```
 
 Converts various stt json formats to draftJs
@@ -169,7 +169,7 @@ import {
   secondsToTimecode,
   timecodeToSeconds,
   shortTimecode
-} from "@bbc/react-transcript-editor/timecodeConverter";
+} from "react-transcript-editor/timecodeConverter";
 ```
 
 some modules to convert to and from timecodes
@@ -277,7 +277,7 @@ On commit this repo uses the [.travis.yml](./.travis.yml) config tu run the auto
 
 <!-- _How to deploy the code/app into test/staging/production_ -->
 
-To push to [npm - `@bbc/react-transcript-editor`](https://www.npmjs.com/package/@bbc/react-transcript-editor)
+To push to [npm - `react-transcript-editor`](https://www.npmjs.com/package/react-transcript-editor)
 
 ```
 npm publish:public
